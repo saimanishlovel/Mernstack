@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Task9</title>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+        }
+
+
+        .outer-box {
+            display: flex;
+            width: 80rem;
+            height: 30rem;
+            border-left: 5px solid #2d7288;
+            border-right: 5px solid #2d7288;
+            border-bottom: 5px solid #2d7288;
+        }
+
+
+        .col {
+            /* padding: 2rem; */
+            flex: 1;
+        }
+
+
+        .col1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .row {
+            flex: 1;
+            padding: 2rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="col1 col" style="border-right: 2px solid black;">
+            <div class="row" style="border-bottom: 2px solid black;">
+                <h1>Frame 1</h1>
+                <h5>Contents of Frame 1</h5>
+            </div>
+            <div class="row">
+                <h1>Frame 2</h1>
+                <h5>Contents of Frame 2</h5>
+            </div>
+        </div>
+        <div class="col row" style="border-right: 2px solid black;">
+            <h1>Frame 3</h1>
+            <h5>Contents of Frame 3</h5>
+        </div>
+        <div class="col row">
+            <h1>Frame 4</h1>
+            <h5>Contents of Frame 4</h5>
+        </div>
+    </div>
+</body>
+</html>
